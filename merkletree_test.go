@@ -2,8 +2,9 @@ package merkletree_test
 
 import (
 	"encoding/hex"
-	"merkletree"
 	"testing"
+
+	"github.com/THaGKi9/merkletree"
 
 	"github.com/stretchr/testify/require"
 	"golang.org/x/crypto/sha3"
