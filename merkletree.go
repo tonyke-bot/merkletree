@@ -102,11 +102,11 @@ func (m *merkleTree) GetLeaves() [][]byte {
 }
 
 func (m *merkleTree) Root() []byte {
-	return m.rootNode.Hash
+	return append([]byte(nil), m.rootNode.Hash...)
 }
 
 func (m *merkleTree) HexRoot() string {
-	return hexEncode(m.Root())
+	return hexEncode(m.rootNode.Hash)
 }
 
 func (m *merkleTree) GetProof(leaf []byte) [][]byte {
