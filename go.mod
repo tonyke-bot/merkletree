@@ -1,4 +1,4 @@
-module merkletree
+module github.com/thagki9/merkletree
 
 go 1.17
 
