@@ -12,7 +12,7 @@ type node struct {
 func (n *node) Equals(obj interface{}) bool {
 	anotherNode, ok := obj.(node)
 	if !ok {
-		return !ok
+		return false
 	}
 
 	return bytes.Equal(anotherNode.Hash, n.Hash)
